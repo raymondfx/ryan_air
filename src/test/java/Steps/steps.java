@@ -151,4 +151,14 @@ public class steps extends BaseClass {
     public void user_selects_seat_allocation_option() throws Throwable {
         passengerDetails.chooseSeats();
     }
+
+    @Then("^User clicks Next Continue$")
+    public void user_clicks_next_continue() throws Throwable {
+        passengerDetails.nextContinue();
+    }
+
+    @And("^User selects seat allocation for return flight$")
+    public void user_selects_seat_allocation_for_return_flight() throws Throwable {
+        passengerDetails.returnSeats();
+    }
 }
