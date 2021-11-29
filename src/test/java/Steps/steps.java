@@ -145,6 +145,7 @@ public class steps extends BaseClass {
     @Then("^User clicks okay got it button$")
     public void user_clicks_okay_got_it_button() throws Throwable {
         passengerDetails.okayGotit();
+        Thread.sleep(5000);
 
     }
     @And("^User selects seat allocation option$")
