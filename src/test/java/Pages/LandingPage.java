@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 
 public class LandingPage extends BaseClass {
-    //
+    //Landing Page Flight Details
     @FindBy(xpath = "//*[@id=\"input-button__departure\"]")
     WebElement departure;
 

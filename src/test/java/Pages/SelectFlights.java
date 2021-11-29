@@ -9,7 +9,7 @@ import utils.BaseClass;
 import java.util.List;
 
 public class SelectFlights extends BaseClass {
-
+    //Flight Details xpath
     @FindBy(xpath = "/html/body/flights-root/div/div/div/div/flights-lazy-content/flights-summary-container/flights-summary/div/div[2]/journey-container/journey/div/div[2]/div/carousel-container/carousel/div/ul/li[3]/carousel-item/button/div[1]/div[1]/span[1]")
     WebElement returnDate;
 
@@ -29,6 +29,8 @@ public class SelectFlights extends BaseClass {
         PageFactory.initElements(driver, this);
     }
 
+
+    //Lateral Scroll Method
     public void changeDeparture(String  strArg1) throws InterruptedException {
         Thread.sleep(2000);
         WebElement slider = driver.findElement(By.xpath("//button[@aria-label='Search next dates']"));

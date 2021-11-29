@@ -7,7 +7,7 @@ import utils.BaseClass;
 
 public class PassengerDetails  extends BaseClass {
 
-
+    //Passenger Details xpath
     @FindBy(xpath="/html/body/flights-root/div/div/div/div/flights-lazy-content/flights-passengers/pax-app-container/pax-app/ry-spinner/div/div/div[2]/pax-app-form-container/pax-app-form/form/pax-passenger-container[1]/pax-passenger/div/pax-passenger-details-container/pax-passenger-details/pax-passenger-details-form-container/pax-details-form/ry-dropdown/div[2]/button")
     WebElement titleDropdown;
 
@@ -45,24 +45,26 @@ public class PassengerDetails  extends BaseClass {
     @FindBy(xpath = "//*[@id=\"ry-modal-portal\"]/div/seats-modal/ry-message-dialog/ry-dialog/div/div[2]/div[2]/button")
     WebElement okyContinue;
 
-    //Choose Seats
-     @FindBy(xpath=  "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[10]/div/button[1]")
+    //Choose Seats Depart Seats
+     @FindBy(xpath=  "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[6]/div/button[1]")
      WebElement seatOne;
-     @FindBy(xpath = "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[10]/div/button[2]")
+     @FindBy(xpath = "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[6]/div/button[2]")
      WebElement seatTwo;
-     @FindBy(xpath = "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[10]/div/button[3]")
+     @FindBy(xpath = "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[6]/div/button[3]")
      WebElement seatThree;
 
      @FindBy(xpath = "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[2]/div/seats-actions/span/button")
      WebElement nextContinue;
+
+     //Chooses Return Seats
      @FindBy(xpath= "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[10/div/button[1]")
      WebElement seatOner;
-
     @FindBy(xpath= "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[10]/div/button[1]")
     WebElement seatTwor;
     @FindBy(xpath= "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[10]/div/button[1]")
     WebElement seatThreer;
 
+    //Continue to Luggage
     @FindBy(xpath = " /html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[2]/div/seats-actions/span/button")
     WebElement continuePage;
     @FindBy(xpath = "/html/body/seats-root/personalization-takeovers/ry-message-renderer[3]/hero-loader-with-data/ng-component/ry-enhanced-takeover-beta-desktop/div/div[3]/div[2]/div[1]/button")
@@ -71,20 +73,20 @@ public class PassengerDetails  extends BaseClass {
     @FindBy(xpath = "/html/body/bags-root/bags-booking-container/div/main/div/section[1]/div/bags-cabin-lazy-bag/bags-cabin-bag-section/bags-bag-layout/div/div[3]/div[2]/bags-pax-table-journey-container/div/div/bags-cabin-bag-table-controls-container/bags-cabin-bag-table-controls/div[1]/bags-small-bag-pax-control/div/bags-product-selector/div/div/div[1]/ry-radio-circle-button/label")
     WebElement smallBag;
 
-    ///html/body/bags-root/bags-booking-container/div/main/div/section[1]/div/bags-cabin-lazy-bag/bags-cabin-bag-section/bags-bag-layout/div/div[3]/div[2]/bags-pax-table-journey-container/div/div/bags-cabin-bag-table-controls-container/bags-cabin-bag-table-controls/div[1]/bags-small-bag-pax-control/div/bags-product-selector/div/div/div[1]/ry-radio-circle-button/label
-
+    //Continue to finish Page
     @FindBy(xpath = "/html/body/bags-root/bags-booking-container/div/main/div/section[4]/bags-continue-flow-container/bags-continue-flow/button")
     WebElement continueForward;
     @FindBy(xpath = "/html/body/bags-root/bags-booking-container/div/bags-enhanced-takeovers/ry-message-renderer[1]/hero-loader-with-data/ng-component/ry-enhanced-takeover-desktop/div/div[3]/button[2]")
     WebElement againNothanks;
-    // /html/body/bags-root/bags-booking-container/div/bags-enhanced-takeovers/ry-message-renderer[1]/hero-loader-with-data/ng-component/ry-enhanced-takeover-desktop/div/div[3]/button[2]
 
 
     @FindBy(xpath = "/html/body/app-root/ng-component/div/div/div/main/div/ng-component/button")
     WebElement finishPage;
     @FindBy(xpath = "/html/body/app-root/ng-component/div/div/div/main/div/button")
     WebElement finalPage;
-    // /html/body/app-root/ng-component/div/div/div/main/div/button
+
+
+    //Passenger Details
     public PassengerDetails() {
         PageFactory.initElements(driver, this);
     }
