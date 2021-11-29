@@ -63,34 +63,28 @@ public class PassengerDetails  extends BaseClass {
     @FindBy(xpath= "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[21]/div/button[1]")
     WebElement seatThreer;
 
+    @FindBy(xpath = " /html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[2]/div/seats-actions/span/button")
+    WebElement continuePage;
+    @FindBy(xpath = "/html/body/seats-root/personalization-takeovers/ry-message-renderer[3]/hero-loader-with-data/ng-component/ry-enhanced-takeover-beta-desktop/div/div[3]/div[2]/div[1]/button")
+    WebElement noThankyou;
 
-    //nextflight
-    ///html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[2]/div/seats-actions/span/button
+    @FindBy(xpath = "/html/body/bags-root/bags-booking-container/div/main/div/section[1]/div/bags-cabin-lazy-bag/bags-cabin-bag-section/bags-bag-layout/div/div[3]/div[2]/bags-pax-table-journey-container/div/div/bags-cabin-bag-table-controls-container/bags-cabin-bag-table-controls/div[1]/bags-small-bag-pax-control/div/bags-product-selector/div/div/div[1]/ry-radio-circle-button/label")
+    WebElement smallBag;
 
-    //continuue
-    ///html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[2]/div/seats-actions/span/button
+    ///html/body/bags-root/bags-booking-container/div/main/div/section[1]/div/bags-cabin-lazy-bag/bags-cabin-bag-section/bags-bag-layout/div/div[3]/div[2]/bags-pax-table-journey-container/div/div/bags-cabin-bag-table-controls-container/bags-cabin-bag-table-controls/div[1]/bags-small-bag-pax-control/div/bags-product-selector/div/div/div[1]/ry-radio-circle-button/label
 
-    //return
-    // *[@id="seat-05A"]/div
-    //*[@id="seat-05B"]/div
-    //*[@id="seat-05C"]/div
-
-    //continue
+    @FindBy(xpath = "/html/body/bags-root/bags-booking-container/div/main/div/section[4]/bags-continue-flow-container/bags-continue-flow/button")
+    WebElement continueForward;
+    @FindBy(xpath = "/html/body/bags-root/bags-booking-container/div/bags-enhanced-takeovers/ry-message-renderer[1]/hero-loader-with-data/ng-component/ry-enhanced-takeover-desktop/div/div[3]/button[2]")
+    WebElement againNothanks;
+    // /html/body/bags-root/bags-booking-container/div/bags-enhanced-takeovers/ry-message-renderer[1]/hero-loader-with-data/ng-component/ry-enhanced-takeover-desktop/div/div[3]/button[2]
 
 
-    //no thanks
-   // /html/body/seats-root/personalization-takeovers/ry-message-renderer[3]/hero-loader-with-data/ng-component/ry-enhanced-takeover-beta-desktop/div/div[3]/div[2]/div[1]/button
-  //small bag
-    ///html/body/bags-root/bags-booking-container/div/main/div/section[1]/div/bags-cabin-lazy-bag/bags-cabin-bag-section/bags-bag-layout/div/div[3]/div[2]/bags-pax-table-journey-container/div/div/bags-cabin-bag-table-controls-container/bags-cabin-bag-table-controls/div[1]/bags-small-bag-pax-control/div/bags-product-selector/div/div/div[1]/ry-radio-circle-button/label/div
-    //continue
-    ///html/body/bags-root/bags-booking-container/div/main/div/section[4]/bags-continue-flow-container/bags-continue-flow/button
-
-    //continue
-    ///html/body/app-root/ng-component/div/div/div/main/div/button
-
-    //continue
-    ///html/body/app-root/ng-component/div/div/div/main/div/ng-component/button
-
+    @FindBy(xpath = "/html/body/app-root/ng-component/div/div/div/main/div/ng-component/button")
+    WebElement finishPage;
+    @FindBy(xpath = "/html/body/app-root/ng-component/div/div/div/main/div/button")
+    WebElement finalPage;
+    // /html/body/app-root/ng-component/div/div/div/main/div/button
     public PassengerDetails() {
         PageFactory.initElements(driver, this);
     }
@@ -142,6 +136,34 @@ public class PassengerDetails  extends BaseClass {
         seatOner.click();
         seatTwor.click();
         seatThreer.click();
+    }
+
+    public void continuePage(){
+       continuePage.click();
+    }
+
+    public void noThanks(){
+        noThankyou.click();
+    }
+
+    public  void smallBag(){
+        smallBag.click();
+    }
+
+    public void continueForward(){
+      continueForward.click();
+    }
+
+    public  void againNothanks(){
+        againNothanks.click();
+    }
+
+    public  void finalPage(){
+        finalPage.click();
+    }
+
+    public  void finishPage(){
+        finishPage.click();
     }
 
 }

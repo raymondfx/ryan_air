@@ -33,6 +33,13 @@ Feature: Book Flight
     And User selects seat allocation option
     Then User clicks Next Continue
     And User selects seat allocation for return flight
+    Then User clicks coninue to next page
+    And User selects no thanks option
+    Then User selects Small Bag Option
+    And User clicks continue after choosing bag
+    And User clicks again no Thanks
+    And User clicks continue to final page
+    Then User clicks continue to finish page
 #    And User selects extra options and continue
 #    And User clicks on View Basket icon
 #    And User clicks on Checkout button

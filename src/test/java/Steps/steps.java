@@ -150,15 +150,60 @@ public class steps extends BaseClass {
     @And("^User selects seat allocation option$")
     public void user_selects_seat_allocation_option() throws Throwable {
         passengerDetails.chooseSeats();
+        Thread.sleep(3000);
     }
 
     @Then("^User clicks Next Continue$")
     public void user_clicks_next_continue() throws Throwable {
         passengerDetails.nextContinue();
+        Thread.sleep(3000);
     }
 
     @And("^User selects seat allocation for return flight$")
     public void user_selects_seat_allocation_for_return_flight() throws Throwable {
         passengerDetails.returnSeats();
+        Thread.sleep(3000);
+    }
+
+    @Then("^User clicks coninue to next page$")
+    public void user_clicks_coninue_to_next_page() throws Throwable {
+        passengerDetails.continuePage();
+        Thread.sleep(3000);
+    }
+
+    @And("^User selects no thanks option$")
+    public void user_selects_no_thanks_option() throws Throwable {
+        passengerDetails.noThanks();
+        Thread.sleep(3000);
+    }
+
+    @Then("^User selects Small Bag Option$")
+    public void user_selects_small_bag_option() throws Throwable {
+        passengerDetails.smallBag();
+        Thread.sleep(3000);
+    }
+
+    @And("^User clicks continue after choosing bag$")
+    public void user_clicks_continue_after_choosing_bag() throws Throwable {
+        passengerDetails.continueForward();
+        Thread.sleep(3000);
+    }
+
+    @And("^User clicks again no Thanks$")
+    public void user_clicks_again_no_thanks() throws Throwable {
+        passengerDetails.againNothanks();
+        Thread.sleep(3000);
+    }
+
+    @And("^User clicks continue to final page$")
+    public void user_clicks_continue_to_final_page() throws Throwable {
+        passengerDetails.finalPage();
+        Thread.sleep(3000);
+    }
+
+    @Then("^User clicks continue to finish page$")
+    public void user_clicks_continue_to_finish_page() throws Throwable {
+        passengerDetails.finishPage();
+        
     }
 }
