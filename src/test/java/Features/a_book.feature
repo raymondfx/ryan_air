@@ -16,7 +16,9 @@ Feature: Book Flight
     And User selects flight
     And User changes the return date to "2022-01-16"
     And User selects flight2
-
+ #   And Change Return date to "2022-02-12"
+#    And User selects dates
+#    And User selects available flight
     Then User Selects Tarifa Value
     And Click continue
     And Continue without login
@@ -38,7 +40,9 @@ Feature: Book Flight
     And User clicks again no Thanks
     And User clicks continue to final page
     Then User clicks continue to finish page
-
+#    And User selects extra options and continue
+#    And User clicks on View Basket icon
+#    And User clicks on Checkout button
 
 
 
