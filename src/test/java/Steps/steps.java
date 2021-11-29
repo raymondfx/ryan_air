@@ -204,6 +204,6 @@ public class steps extends BaseClass {
     @Then("^User clicks continue to finish page$")
     public void user_clicks_continue_to_finish_page() throws Throwable {
         passengerDetails.finishPage();
-        
+
     }
 }
