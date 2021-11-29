@@ -175,7 +175,7 @@ public class steps extends BaseClass {
     @And("^User selects no thanks option$")
     public void user_selects_no_thanks_option() throws Throwable {
         passengerDetails.noThanks();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
     }
 
     @Then("^User selects Small Bag Option$")
