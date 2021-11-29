@@ -46,11 +46,11 @@ public class PassengerDetails  extends BaseClass {
     WebElement okyContinue;
 
     //Choose Seats Depart Seats
-     @FindBy(xpath=  "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[21]/div/button[1]")
+     @FindBy(xpath=  "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[22]/div/button[1]")
      WebElement seatOne;
-     @FindBy(xpath = "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[21]/div/button[2]")
+     @FindBy(xpath = "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[22]/div/button[2]")
      WebElement seatTwo;
-     @FindBy(xpath = "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[21]/div/button[3]")
+     @FindBy(xpath = "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[22]/div/button[3]")
      WebElement seatThree;
 
      @FindBy(xpath = "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[2]/div/seats-actions/span/button")
@@ -65,7 +65,7 @@ public class PassengerDetails  extends BaseClass {
     WebElement seatThreer;
 
     //Continue to Luggage
-    @FindBy(xpath = " /html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[2]/div/seats-actions/span/button")
+    @FindBy(xpath = "/html/body/seats-root/personalization-takeovers/ry-message-renderer[3]/hero-loader-with-data/ng-component/ry-enhanced-takeover-beta-desktop/div/div[3]/div[2]/div[1]/button")
     WebElement continuePage;
     @FindBy(xpath = "/html/body/seats-root/personalization-takeovers/ry-message-renderer[3]/hero-loader-with-data/ng-component/ry-enhanced-takeover-beta-desktop/div/div[3]/div[2]/div[1]/button")
     WebElement noThankyou;
