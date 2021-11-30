@@ -187,7 +187,7 @@ public class steps extends BaseClass {
     @And("^User clicks continue after choosing bag$")
     public void user_clicks_continue_after_choosing_bag() throws Throwable {
         passengerDetails.continueForward();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
     }
 
     @And("^User clicks again no Thanks$")
