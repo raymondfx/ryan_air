@@ -169,7 +169,7 @@ public class steps extends BaseClass {
     @Then("^User clicks coninue to next page$")
     public void user_clicks_coninue_to_next_page() throws Throwable {
         passengerDetails.continuePage();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
     }
 
     @And("^User selects no thanks option$")
@@ -193,6 +193,12 @@ public class steps extends BaseClass {
     @And("^User clicks again no Thanks$")
     public void user_clicks_again_no_thanks() throws Throwable {
         passengerDetails.againNothanks();
+        Thread.sleep(5000);
+    }
+
+    @And("^User clicksks continue in the following page$")
+    public void user_clicksks_continue_in_the_following_page() throws Throwable {
+        passengerDetails.followingPage();
         Thread.sleep(3000);
     }
 

@@ -12,9 +12,9 @@ Feature: Book Flight
     And User selects  Passengers Two Adults and One Child
     And User clicks on Search button
     Given User navigates to the page "https://www.ryanair.com/gb/en/trip/flights/select?adults=2&teens=0&children=1&infants=0&dateOut=2021-12-01&dateIn=2021-12-11&isConnectedFlight=false&isReturn=true&discount=0&promoCode=&originIata=LIS&destinationIata=BVA&tpAdults=2&tpTeens=0&tpChildren=1&tpInfants=0&tpStartDate=2021-12-01&tpEndDate=2021-12-11&tpDiscount=0&tpPromoCode=&tpOriginIata=LIS&tpDestinationIata=BVA"
-    Then User changes the departure date to "2022-01-06"
+    Then User changes the departure date to "2022-02-06"
     And User selects flight
-    And User changes the return date to "2022-01-16"
+    And User changes the return date to "2022-02-16"
     And User selects flight2
  #   And Change Return date to "2022-02-12"
 #    And User selects dates
@@ -37,7 +37,7 @@ Feature: Book Flight
     And User selects no thanks option
     Then User selects Small Bag Option
     And User clicks continue after choosing bag
-    And User clicks again no Thanks
+    And User clicksks continue in the following page
     And User clicks continue to final page
     Then User clicks continue to finish page
 #    And User selects extra options and continue

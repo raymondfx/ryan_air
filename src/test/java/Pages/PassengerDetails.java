@@ -46,21 +46,21 @@ public class PassengerDetails  extends BaseClass {
     WebElement okyContinue;
 
     //Choose Seats Depart Seats
-     @FindBy(xpath=  "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[30]/div/button[1]")
+     @FindBy(xpath=  "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[22]/div/button[1]")
      WebElement seatOne;
-     @FindBy(xpath = "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[30]/div/button[2]")
+     @FindBy(xpath = "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[22]/div/button[2]")
      WebElement seatTwo;
-     @FindBy(xpath = "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[30]/div/button[3]")
+     @FindBy(xpath = "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[22]/div/button[3]")
      WebElement seatThree;
      @FindBy(xpath = "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[2]/div/seats-actions/span/button")
      WebElement nextContinue;
 
      //Chooses Return Seats
-     @FindBy(xpath= "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[30]/div/button[1]")
+     @FindBy(xpath= "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[22]/div/button[1]")
      WebElement seatOner;
-    @FindBy(xpath= "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[30]/div/button[2]")
+    @FindBy(xpath= "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[22]/div/button[2]")
     WebElement seatTwor;
-    @FindBy(xpath= "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[30]/div/button[3]")
+    @FindBy(xpath= "/html/body/seats-root/div/div/div/seats-container-root/seats-container-v2/main/div[2]/div[1]/div/div/div/div/div[1]/seat-map/div/div[22]/div/button[3]")
     WebElement seatThreer;
 
     //Continue to Luggage
@@ -69,7 +69,7 @@ public class PassengerDetails  extends BaseClass {
     @FindBy(xpath = "/html/body/seats-root/personalization-takeovers/ry-message-renderer[3]/hero-loader-with-data/ng-component/ry-enhanced-takeover-beta-desktop/div/div[3]/div[2]/div[1]/button")
     WebElement noThankyou;
 
-    @FindBy(xpath = "/html/body/bags-root/bags-booking-container/div/main/div/section[1]/div/bags-cabin-lazy-bag/bags-cabin-bag-section/bags-bag-layout/div/div[3]/div[2]/bags-pax-table-journey-container/div/div/bags-cabin-bag-table-controls-container/bags-cabin-bag-table-controls/div[1]/bags-small-bag-pax-control/div/bags-product-selector/div/div/div[1]/ry-radio-circle-button/label")
+    @FindBy(xpath="//label[@class='ry-radio-circle-button__label']")
     WebElement smallBag;
 
     //Continue to finish Page
@@ -78,10 +78,11 @@ public class PassengerDetails  extends BaseClass {
     @FindBy(xpath = "/html/body/bags-root/bags-booking-container/div/bags-enhanced-takeovers/ry-message-renderer[1]/hero-loader-with-data/ng-component/ry-enhanced-takeover-desktop/div/div[3]/button[2]")
     WebElement againNothanks;
 
-
-    @FindBy(xpath = "/html/body/app-root/ng-component/div/div/div/main/div/ng-component/button")
+    @FindBy(xpath="//button[contains(text(),'Continue')]")
+    WebElement followingPage;
+    @FindBy(xpath="//button[contains(text(),'Continue')]")
     WebElement finishPage;
-    @FindBy(xpath = "/html/body/app-root/ng-component/div/div/div/main/div/button")
+    @FindBy(xpath = "//button[contains(text(),'Continue')]")
     WebElement finalPage;
 
 
@@ -148,6 +149,7 @@ public class PassengerDetails  extends BaseClass {
     }
 
     public  void smallBag(){
+
         smallBag.click();
     }
 
@@ -158,6 +160,8 @@ public class PassengerDetails  extends BaseClass {
     public  void againNothanks(){
         againNothanks.click();
     }
+
+    public  void followingPage() { followingPage.click();}
 
     public  void finalPage(){
         finalPage.click();
