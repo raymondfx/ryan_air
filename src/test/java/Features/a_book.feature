@@ -39,7 +39,7 @@ Feature: Book Flight
     And User clicks continue after choosing bag
     And User clicksks continue in the following page
     And User clicks continue to final page
-    Then User clicks continue to finish page
+ #   Then User clicks continue to finish page
 #    And User selects extra options and continue
 #    And User clicks on View Basket icon
 #    And User clicks on Checkout button
